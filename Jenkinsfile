@@ -8,11 +8,11 @@ node {
 	def tomcatWeb = ''
 	def mvnBin = mvnHome
 	if (isUnix()) {
-		tomcatWeb = '/Library/Tomcat/webapps'
+		tomcatWeb = '/opt/tomcat/webapps'
 		mvnBin+='/bin'
 		}
 	else { 
-		tomcatWeb = 'C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps'	
+		tomcatWeb = '/opt/tomcat/webapps'	
 		mvnBin+='\\bin'
 		}
 	stage('jpa') { 
